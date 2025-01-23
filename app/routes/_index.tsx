@@ -2,7 +2,6 @@
 import type { MetaFunction, LoaderFunction } from "@remix-run/node";
 import { json } from "@remix-run/node";
 import { useLoaderData, useSearchParams } from "@remix-run/react";
-import { parse } from "postcss";
 import { plots, type Plot } from "~/data/plots";
 import { useState } from 'react';
 
