@@ -81,23 +81,23 @@ export default function Index() {
         <div className="mb-6 bg-white p-4 rounded-lg shadow-sm">
           {/* Location Filter */}
           <h2 className="text-lg font-medium text-gray-900 mb-4">Filter results</h2>
-<div className="mb-6">
-  <label htmlFor="location" className="block text-sm font-medium text-gray-700">
-    Location
-  </label>
-  <input
-    type="text"
-    id="location"
-    name="location"
-    className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
-    value={locationState}
-    onChange={(e) => {
-      setLocation(e.target.value); // Update location state
-      handleFilterChange(e); // Update URL params
-    }}
-    placeholder="Enter a location"
-  />
-</div>
+          <div className="mb-6">
+            <label htmlFor="location" className="block text-sm font-medium text-gray-700">
+              Location
+            </label>
+            <input
+              type="text"
+              id="location"
+              name="location"
+              className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
+              value={locationState}
+              onChange={(e) => {
+                setLocation(e.target.value); // Update location state
+                handleFilterChange(e); // Update URL params
+              }}
+              placeholder="Enter a location"
+            />
+          </div>
 
         {/* Price Range Slider */}
         <div className="flex gap-4"> {/* Flex parent container*/}
